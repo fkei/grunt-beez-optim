@@ -1,0 +1,45 @@
+{
+  "name": "grunt-beez-optim",
+  "description": "beez-optim makes specify images optimize automatically in build process using grunt. ",
+  "version": "0.1.1",
+  "homepage": "https://github.com/fkei/grunt-beez-optim",
+  "author": {
+    "name": "fkei",
+    "email": "kei.topaz@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fkei/grunt-beez-optim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fkei/grunt-beez-optim/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/fkei/grunt-beez-optim/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "beez-optim": "*"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt": "~0.4.2"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "gruntplugin",
+    "beez",
+    "configuration",
+    "build"
+  ]
+}

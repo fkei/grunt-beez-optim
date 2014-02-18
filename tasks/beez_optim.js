@@ -23,14 +23,32 @@ module.exports = function(grunt) {
             loglevel = optim.logger.LEVELS.DEBUG;
         }
         var done = this.async();
-        optim.build(options.srcdir, options.options, loglevel, function (err, res) {
+        var tasks = [];
+
+        grunt.util._.each(options, function (options, idx) {
+            tasks.push(function (callback) {
+
+                optim.build(options.srcdir, options.options, loglevel, function (err, res) {
+                    callback(err, res);
+                });
+            });
+
+        });
+
+
+        grunt.util.async.series(tasks, function (err, res) {
             if (err) {
                 grunt.log.writeln('Failure :(');
                 grunt.fail.fatal(new Error("beez-optim error."));
             } else {
+                //if (grunt.cli.options.verbose) {
+                //    optim.logger.debug(JSON.stringify(res, null, '    '));
+                //}
                 grunt.log.writeln('Success :)');
             }
             done();
         });
+
+
     });
 };

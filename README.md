@@ -28,7 +28,7 @@ grunt.initConfig({
   beez_optim: {
     options: {
       srcdir: __dirname + '/example/image',
-      options: {
+      options: [{
         optipng: {
           use: true,
           level: 2
@@ -41,7 +41,7 @@ grunt.initConfig({
           "use": true,
           "options": "--ext .png -f -v"
         }
-      },
+      }],
       loglevel: 3
     }
   }

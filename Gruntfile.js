@@ -24,24 +24,42 @@ module.exports = function(grunt) {
 
         // Configuration to be run.
         beez_optim: {
-            options: {
-                srcdir: __dirname + '/example/image',
-                options: {
-                    optipng: {
-                        use: true,
-                        level: 2
-                    },
-                    jpegoptim: {
-                        use: true,
-                        options: '--strip-all'
-                    },
-                    pngquant: {
-                        use: true,
-                        options: "--ext .png -f -v"
+            options: [
+                {
+                    srcdir: __dirname + '/example/image',
+                    options: {
+                        optipng: {
+                            use: true,
+                            level: 2
+                        },
+                        jpegoptim: {
+                            use: true,
+                            options: '--strip-all'
+                        },
+                        pngquant: {
+                            use: true,
+                            options: "--ext .png -f -v"
+                        }
                     }
                 },
-                loglevel: 3
-            }
+                {
+                    srcdir: __dirname + '/example/image',
+                    options: {
+                        optipng: {
+                            use: true,
+                            level: 2
+                        },
+                        jpegoptim: {
+                            use: true,
+                            options: '--strip-all'
+                        },
+                        pngquant: {
+                            use: true,
+                            options: "--ext .png -f -v"
+                        }
+                    }
+                }
+            ]
         }
 
     });

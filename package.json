@@ -1,7 +1,7 @@
 {
   "name": "grunt-beez-optim",
   "description": "beez-optim makes specify images optimize automatically in build process using grunt. ",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "homepage": "https://github.com/fkei/grunt-beez-optim",
   "author": {
     "name": "fkei",

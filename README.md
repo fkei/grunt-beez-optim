@@ -36,6 +36,10 @@ grunt.initConfig({
         jpegoptim: {
           use: true,
           options: '--strip-all'
+        },
+        "pngquant": {
+          "use": true,
+          "options": "--ext .png -f -v"
         }
       },
       loglevel: 3
@@ -43,6 +47,12 @@ grunt.initConfig({
   }
 });
 ```
+
+# deps
+
+- [jpegoptim](https://github.com/tjko/jpegoptim)
+- [optipng](http://optipng.sourceforge.net/)
+- [pngquant](http://pngquant.org/)
 
 ### Options
 

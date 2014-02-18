@@ -34,6 +34,10 @@ module.exports = function(grunt) {
                     jpegoptim: {
                         use: true,
                         options: '--strip-all'
+                    },
+                    pngquant: {
+                        use: true,
+                        options: "--ext .png -f -v"
                     }
                 },
                 loglevel: 3

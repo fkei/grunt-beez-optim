@@ -39,7 +39,8 @@
   "keywords": [
     "gruntplugin",
     "beez",
-    "configuration",
-    "build"
+    "optipng",
+    "imageoptim",
+    "pngquant"
   ]
 }
